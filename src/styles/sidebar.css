@@ -1,0 +1,31 @@
+.sidebar {
+  width: 76px;
+  border-right: gray 1px solid;
+  display: flex;
+  justify-content: center;
+  padding-block: 50px;
+  min-height: 734px;
+}
+
+.sidebar button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+  outline: none;
+  border: none;
+}
+
+.sidebar button:hover {
+  transform: scale(1.1);
+}
+
+.sidebar button img {
+  transition: 0.4s;
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,25 @@
+.notes-app {
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: rgb(32, 32, 32);
+}
+body {
+  background-color: var(--background-color);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica";
+  color: var(--font-color);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}

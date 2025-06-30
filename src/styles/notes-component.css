@@ -1,0 +1,74 @@
+.notes-component {
+  width: 255px;
+  height: 255px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.notes-component:hover {
+  opacity: 80%;
+}
+.notes-component:active {
+  opacity: 30%;
+}
+
+.notes-component .title {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.notes-component .body {
+  height: 148px;
+  overflow-y: scroll;
+  margin-bottom: 0px;
+}
+.notes-component .created-at {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0px;
+}
+.notes-component button {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+.notes-component button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.notes-component button:active {
+  opacity: 40%;
+}
+.notes-component button img[alt="trash"] {
+  width: 19px;
+  height: 19px;
+}
+.notes-component:nth-child(5n + 1) {
+  background-color: #a9c9ff; /* Biru muda */
+}
+.notes-component:nth-child(5n + 2) {
+  background-color: #b6e3b3; /* Hijau muda */
+}
+.notes-component:nth-child(5n + 3) {
+  background-color: #fff3b0; /* Kuning pastel */
+}
+
+.notes-component:nth-child(5n + 4) {
+  background-color: #fad0c9; /* Merah muda */
+}
+
+.notes-component:nth-child(5n + 5) {
+  background-color: #e6c7ff; /* Lavender */
+}

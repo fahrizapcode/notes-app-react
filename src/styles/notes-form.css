@@ -1,0 +1,68 @@
+.notes-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 420px;
+  /* border: 1px solid black; */
+}
+
+.notes-form form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 540px;
+}
+
+.notes-form form .header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.notes-form form .header h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.notes-form form .header p {
+  margin-top: 30px;
+}
+
+.notes-form form input {
+  border: 1px solid grey;
+  height: 34px;
+  font-size: 16px;
+  padding-inline: 10px;
+  border-radius: 5px;
+}
+
+.notes-form form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid grey;
+  height: 264px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.notes-form form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  background-color: black;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+
+.notes-form form button:active {
+  opacity: 20%;
+}
+
+.notes-form form button img {
+  width: 28px;
+}

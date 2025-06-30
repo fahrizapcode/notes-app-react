@@ -1,0 +1,33 @@
+.landing-page {
+  height: 700px;
+  display: flex;
+  padding-left: 60px;
+  padding-top: 100px;
+  flex-direction: column;
+}
+.landing-page p {
+  font-size: 48px;
+  width: 450px;
+  font-weight: 500;
+}
+.landing-page .action-button {
+  display: flex;
+  column-gap: 16px;
+  padding-left: 6px;
+  width: 400px;
+}
+.landing-page .action-button button {
+  width: 100px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.landing-page .action-button button:active {
+  opacity: 20%;
+}
+.landing-page .action-button button:hover {
+  border: 2px solid black;
+}
