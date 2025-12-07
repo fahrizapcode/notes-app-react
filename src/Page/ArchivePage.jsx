@@ -14,6 +14,7 @@ export default class ArchivePage extends React.Component {
     this.props.onUpdateArchivedNotes(data);
     this.props.updateNotes();
   }
+
   render() {
     const {
       archivedNotes,
@@ -26,14 +27,7 @@ export default class ArchivePage extends React.Component {
       <ThemeConsumer>
         {({ theme, toggleTheme }) => {
           return (
-            <div
-              className="notes-content"
-              style={{
-                marginLeft: 76,
-                borderLeft: "1px solid black",
-                height: 726,
-              }}
-            >
+            <div className="notes-content">
               <NotesList
                 title="Di Arsipkan"
                 isActiveNotes={false}

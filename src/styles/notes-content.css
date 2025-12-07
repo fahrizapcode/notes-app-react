@@ -1,7 +1,7 @@
 .notes-content {
   width: 94%;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 60px;
   position: relative;
 }
 
@@ -30,4 +30,20 @@
   width: 300px;
   font-size: 14px;
   padding-inline: 10px;
+}
+
+@media (max-width: 640px) {
+  .notes-content .nav-top {
+    padding-inline: 8px;
+    width: 100%;
+  }
+  .notes-content {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 65px;
+    overflow-y: scroll;
+  }
+  .notes-content .nav-top .search-note {
+    flex: 1;
+  }
 }

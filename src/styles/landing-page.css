@@ -1,33 +1,138 @@
+/* PAGE */
 .landing-page {
-  height: 700px;
+  min-height: 100vh;
   display: flex;
-  padding-left: 60px;
-  padding-top: 100px;
   flex-direction: column;
-}
-.landing-page p {
-  font-size: 48px;
-  width: 450px;
-  font-weight: 500;
-}
-.landing-page .action-button {
-  display: flex;
-  column-gap: 16px;
-  padding-left: 6px;
-  width: 400px;
-}
-.landing-page .action-button button {
-  width: 100px;
-  height: 34px;
-  border: 1px solid black;
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: white;
+  padding-left: 80px;
+  padding-top: 20vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fafafa, #f3f4ff);
 }
 
-.landing-page .action-button button:active {
-  opacity: 20%;
+/* BLOB */
+.landing-page .blob {
+  position: absolute;
+  left: -160px;
+  top: -140px;
+  height: 120vh;
+  opacity: 0.85;
+  z-index: 0;
 }
-.landing-page .action-button button:hover {
-  border: 2px solid black;
+
+/* TEXT */
+.landing-page p {
+  font-size: 52px;
+  line-height: 1.15;
+  max-width: 520px;
+  font-weight: 500;
+  color: #1f2937; /* slate-800 */
+  z-index: 2;
+  margin-bottom: 36px;
+}
+
+/* BUTTON WRAPPER */
+.landing-page .action-button {
+  display: flex;
+  gap: 18px;
+  z-index: 2;
+}
+
+/* COMMON BUTTON */
+.landing-page .action-button button {
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 42px;
+  cursor: pointer;
+  transition: all 0.28s ease;
+}
+
+/* LOGIN – PRIMARY */
+.landing-page .action-button button:first-child {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(79, 70, 229, 0.35);
+}
+
+.landing-page .action-button button:first-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 36px rgba(79, 70, 229, 0.45);
+}
+
+/* REGISTER – SECONDARY (NOW WITH EFFECT) */
+.landing-page .action-button button:last-child {
+  background: rgba(255, 255, 255, 0.85);
+  color: #1f2937;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.08);
+}
+
+.landing-page .action-button button:last-child:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ACTIVE */
+.landing-page .action-button button:active {
+  transform: scale(0.96);
+}
+
+/* ========================= */
+/* RESPONSIVE – MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .landing-page {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 18vh;
+    padding-bottom: 10vh;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .landing-page p {
+    font-size: 44px;
+    max-width: 100%;
+    margin-bottom: 28px;
+    font-weight: 500;
+    max-width: 400px;
+  }
+
+  .landing-page .action-button {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    max-width: 400px;
+  }
+
+  .landing-page .action-button button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  .landing-page .blob {
+    left: -220px;
+    top: -200px;
+    height: 95vh;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .landing-page {
+    padding-top: 16vh;
+  }
+
+  .landing-page p {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 }

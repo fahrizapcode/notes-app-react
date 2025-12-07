@@ -66,3 +66,18 @@
 .notes-form form button img {
   width: 28px;
 }
+
+@media (max-width: 640px) {
+  .notes-form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .notes-form form {
+    width: 90%;
+  }
+  .notes-form form textarea {
+    height: 220px;
+  }
+}

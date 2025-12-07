@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   height: auto;
+  height: 100dvh;
 }
 
 [data-theme="dark"] {
@@ -10,16 +11,25 @@
 }
 body {
   background-color: var(--background-color);
+  margin: 0px;
 }
+
 * {
   box-sizing: border-box;
   font-family: "Helvetica";
   color: var(--font-color);
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 button {
   cursor: pointer;
+}
+@media (max-width: 640px) {
+  .notes-app {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
 }

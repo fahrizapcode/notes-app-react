@@ -5,6 +5,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
   return (
     <div className="landing-page">
+      <img src="/image/blob.svg" alt="blob" className="blob" />
       <p>Selamat Datang di aplikasi Catatan</p>
       <div className="action-button">
         <button onClick={() => navigate("/login")}>Login</button>
